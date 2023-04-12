@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "d-test-selenium"
+  description: "Conjunto de pruebas automáticas que realizan la validacuión e2e de la funcionalidad del servicio cttione"
+  annotations:
+    github.com/project-slug: juananmora/d-test-selenium
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: "team-d"
+  dependsOn:
+  - "component:artist-lookup"
