@@ -32,7 +32,7 @@ docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-edge:4.8.2-202303
 
 ```bash
 # Install Selenium Grid Mesh
-docker-compose -f docker-compose-v3.yml up -d --scale chrome=3 --scale firefox=2 --scale edge=1
+docker-compose -f docker-compose-v3.yml up -d --scale chrome=2 --scale firefox=2 --scale edge=1
 
 # test project execution
  mvn -s settings.xml clean package
